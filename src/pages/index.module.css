@@ -1,0 +1,10 @@
+.viewport-box {
+    height: 100vh;
+    position: relative;
+}
+
+.header-wrap {
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+}

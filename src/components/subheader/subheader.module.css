@@ -1,0 +1,11 @@
+.subheader {
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .subheader {
+        font-size: 2rem;
+    }
+}
