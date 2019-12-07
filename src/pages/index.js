@@ -2,11 +2,14 @@ import React from "react"
 import Header from "../components/header/header"
 import Subheader from "../components/subheader/subheader"
 import Menu from "../components/menu/menu"
-import Section from "../components/section/section"
 import Layout from "../components/layout/layout"
 import styles from "./index.module.css"
 
+
 import { Link } from "gatsby"
+import About from "../components/section/about/about"
+import Work from "../components/section/work/work"
+import Contact from "../components/section/contact/contact"
 
 export default () => (
     <Layout>
@@ -18,11 +21,16 @@ export default () => (
                 <Header />
                 <Subheader />
             </div>
+
+            <div className={styles.scrollWrap}>
+                <img className={styles.scrollIcon} src="./arrow-down.png" alt="scroll down" />
+                <span className={styles.scrollText}>Scroll down</span>
+            </div>
         </div>
         
-        <Section sectionTitle="About me" sectionDescription="something interesting about me"/>
-        <Section sectionTitle="Work" sectionDescription="something about my zero work"/>
-        <Section sectionTitle="Contact me" sectionDescription="call me maybe?"/>
+        <About />
+        <Work />
+        <Contact />
 
         <Link to="/404">Dont click here! There is nothing to see.</Link>
     </Layout>
