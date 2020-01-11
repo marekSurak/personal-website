@@ -1,4 +1,11 @@
 .layout {
-    padding: 2rem;
+    padding: 1rem 1rem .5rem 1rem;
     margin: 0 auto;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .layout {
+        padding: 2rem 2rem 1rem 2rem;
+    }
 }

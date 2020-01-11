@@ -1,0 +1,110 @@
+.wrapper {
+    text-align: left;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.image-wrap {
+    order: 1;
+    margin-left: -2rem;
+    height: 20rem;
+    width: 11rem;
+    overflow: hidden;
+    border-top-left-radius: 20rem;
+    border-bottom-left-radius: 20rem;
+    background-color: grey;
+}
+
+.text-wrapper {
+    order: 2;
+}
+
+.sub-title {
+    font-size: 1rem;
+    color: #9a9a9a;
+    font-weight: 300;
+}
+
+.title {
+    color: #a4292a;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.text {
+    display: block;
+    font-size: 1rem;
+}
+
+.menu {
+    text-align: left;
+    position: absolute;
+    left: 2rem;
+    line-height: .7;
+}
+
+.menu-one {
+    font-weight: 600;
+    font-size: 12rem;
+    display: block;
+    color: #9a9a9a1a;
+}
+
+.menu-two {
+    display: block;
+    color: #a4292a30;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+.email {
+    margin-right: 3rem;
+}
+
+.email, .phone {
+    display: inline-block;
+    transition: all 200ms;
+}
+
+.email:hover, .phone:hover {
+    transform: scale(1.05);
+    transition: all 200ms;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    transition: all 200ms;
+}
+
+.icon:hover {
+    cursor: pointer;
+    /* fill: #ea6a1d; */
+    transform: scale(1.2);
+    transition: all 200ms;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .text-wrapper {
+        margin-right: 5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .sub-title {
+        font-size: 1.25rem;
+    }
+    
+    .text {
+        font-size: 1.25rem;
+    }
+}
