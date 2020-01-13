@@ -69,9 +69,8 @@
     }
 }
 
-
-/* .parallax {
-    perspective: 300px;
+.parallax {
+    perspective: 30px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -80,8 +79,8 @@
 
 .parallax-group {
     position: relative;
-    min-height: 100vh;
-    height: 500px;
+    /* min-height: 100vh; */
+    /* height: 500px; */
     transform-style: preserve-3d;
     transition: transform 0.5s;
   }
@@ -91,9 +90,50 @@
     z-index: 5;
 }
 
+/* About me */
+.parallax-group:nth-child(2) {
+    height: 600px;
+}
+
+.parallax-group:nth-child(2) .parallax-back .content {
+    position: absolute;
+    top: 20rem;
+}
+
+
+/* Work */
+.parallax-group:nth-child(3) {
+    height: 900px;
+}
+
+.parallax-group:nth-child(3) .parallax-back .content {
+    position: absolute;
+    top: 15rem;
+}
+
+/* Contact */
+.parallax-group:nth-child(4) {
+    height: 600px;
+}
+
+.parallax-group:nth-child(4) .parallax-back .content {
+    position: absolute;
+    top: 15rem;
+}
+
+
 .parallax-group:first-child .parallax-base {
-     transform: translateZ(-50px) scale(1.2); 
-    background: rgb(102,204,102);
+     transform: translateZ(-10px) scale(1.3); 
+    /* background: rgb(102,204,102); */
+}
+
+.parallax-group:nth-child(4) .parallax-base {
+    transform: translateZ(-13px) scale(1.3); 
+}
+
+.parallax-group:nth-child(3) .parallax-back .menu {
+    left: 0;
+    right: initial;
 }
 
 .parallax-group:nth-child(2) {
@@ -101,7 +141,7 @@
 }
 
 .parallax-group:nth-child(2) .parallax-back {
-    background: rgb(123,210,102);
+    /* background: rgb(123,210,102); */
 }
 
 .parallax-layer {
@@ -118,7 +158,14 @@
     z-index: 4;
 }
 
-.content {   
+.parallax-back .content {
+    position: absolute;
+    top: 15rem;
+    right: 0;
+
+}
+
+/* .content {   
     text-align: center;
     position: absolute;
     left: 50%;
@@ -127,19 +174,17 @@
     transform: translate(-50%, -50%);
 } */
 
-/* .parallax-back {
-    transform: translateZ(-300px) scale(2);
+.parallax-back {
+    transform: translateZ(-10px) scale(1.3);
     z-index: 3;
 }
 
 .parallax-fore {
-    transform: translateZ(90px) scale(.7);
+    transform: translateZ(10px) scale(.7);
     z-index: 1;
-} */
+}
 
-
-
-/* .menu {
+.menu {
     text-align: right;
     position: absolute;
     right: 2rem;
@@ -149,15 +194,35 @@
 
 .menu-one {
     font-weight: 600;
-    font-size: 12rem;
+    font-size: 6rem;
     display: block;
     color: #9a9a9a1a;
-} */
-
-/* .menu-two {
+}
+.menu-two {
     display: block;
     color: #a4292a30;
     font-weight: 500;
-    font-size: 6rem;
-} */
+    font-size: 3rem;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .menu-one {
+        font-size: 12rem;
+    }
+    .menu-two {
+        font-size: 6rem;
+    }
+
+    .parallax-group:nth-child(3) .parallax-back .content {
+        right: initial;
+        left: 50%;
+    }
+    
+    .parallax-group:nth-child(4) .parallax-back .content {
+        right: initial;
+        left: 55%;
+    }
+}
+
 

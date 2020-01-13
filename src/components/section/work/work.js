@@ -5,6 +5,7 @@ export default () => (
     <div className={styles.wrapper} id="work">
         {/* <div className={styles.imageWrap}></div> */}
         <div className={styles.textWrapper}>
+            <div>
             <div className={styles.subTitle}>Where I / What I</div>
             <div className={styles.title} >Work / Do</div>
             
@@ -17,6 +18,8 @@ export default () => (
             </div>
             
             <span className={styles.textSection}>I am working on great projects with amazing an team, here are some of the <b>projects:</b></span>
+
+            </div>
 
             <div className={styles.projectsBox}>
                 
