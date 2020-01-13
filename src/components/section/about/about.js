@@ -16,7 +16,7 @@ export default () => (
                 in Czech republic. You can find more information below.
             </span>
             <span className={styles.text}>
-                I would love to work on projects that matters. Projects that brings some value and make <b>world a better place.</b>
+                I would love to work on projects that matter. Projects that bring some value and make <b>world a better place.</b>
                 I believe together, we can do something that makes peoples lives easier.
             </span>
             <span className={styles.text}>If you agree, feel free to <b>contact me!</b></span>
