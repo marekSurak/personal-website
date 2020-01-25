@@ -1,79 +1,81 @@
 import React from "react"
 import styles from "./work.module.css"
+import Section from "../section"
 
-export default () => (
-    <div className={styles.wrapper} id="work">
-        {/* <div className={styles.imageWrap}></div> */}
-        <div className={styles.textWrapper}>
-            <div>
-            <div className={styles.subTitle}>Where I / What I</div>
-            <div className={styles.title} >Work / Do</div>
-            
-            <div className={styles.textSection}>
+const techStackData = [
+    'React.js','Node.js','Cypress','Ima.js','Webpack',
+    'Docker','EcmaScript','eslint','stylelint','less'
+]
+
+const jobDescData = [
+    'Configuration of CI/CD Pipelines',
+    'Developing components and pages according graphic designs',
+    'Reviewing The Quality Of Code & Design',
+    'Profiling, Troubleshooting & Bugs Fixing',
+    'Performing Unit & Load Testing',
+    'Developing New Product Features',
+    'Experimenting With Latest Technologies'
+]
+
+export default function Work () {
+    return (
+        <Section className='work' title='Work / Do' subTitle='Where I / What I' id='work'>
+            <div className={styles.text}>
                 Since <b>7/2017</b> I have worked for
-                <a className={styles.workTitle} href="https://o.seznam.cz/en" target="_blank">
+                <a className={styles.workTitle} href="https://o.seznam.cz/en"  rel="noopener noreferrer" target="_blank">
                 &nbsp;<b>Seznam.cz</b>&nbsp;
                 </a>
                 #1 company on Czech internet
             </div>
             
-            <span className={styles.textSection}>I am working on great projects with amazing an team, here are some of the <b>projects:</b></span>
-
-            </div>
-
-            <div className={styles.projectsBox}>
-                
-                <div className={styles.project}>
-                    <a className={styles.projectTitle} href="https://www.sbazar.cz">Sbazar</a>
-                    &
-                    <a className={styles.projectTitle} href="https://www.sauto.cz/prejit-na-mobil/">Sauto</a>    
-                    <img className={styles.projectImage} src="./img/sbazar.jpg" alt="" />
-                </div>
-
-                <div className={styles.projectDescription}>
-                <span className={styles.projectDescriptionTitle}><b>Job description:</b></span>
-                    <ul>
-                        <li>Configuration of CI/CD Pipelines</li>
-                        <li>Developing components and pages according graphic designs</li>
-                        <li>Reviewing The Quality Of Code & Design</li>
-                        <li>Profiling, Troubleshooting & Bugs Fixing</li>
-                        <li>Performing Unit & Load Testing</li>
-                        <li>Developing New Product Features</li>
-                        <li>Experimenting With Latest Technologies</li>
-                    </ul>
-                </div>
-                
-                {/* <div className={styles.project}>
-                    <a className={styles.projectTitle} href="https://www.sauto.cz/prejit-na-mobil/">Sauto</a>    
-                    <img className={styles.projectImage} src="./img/sbazar.jpg" alt="" />
-                </div> */}
-
-                <div className={styles.projectTech}>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>Cypress</li>
-                        <li>Ima.js</li>
-                        <li>Webpack</li>
-                        <li>Docker</li>
-                        <li>EcmaScript</li>
-                        <li>eslint</li>
-                        <li>stylelint</li>
-                        <li>less</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        {/* <div className={styles.menu}>
-            <div>
-                <span className={styles.menuGrey}>Expe</span>
-            </div>
+            <span className={styles.text}>I am working on great projects with amazing an team, here are some of the <b>projects:</b></span>
             
-            <div>
-                <span className={styles.menuRed}>rience</span>
+            <div className={styles.projectsBox}>
+                { _renderProjectInfo()}
+                { _renderJobDesc() }
+                { _renderTech() }
             </div>
-        </div> */}
-        
-    </div>
-)
+        </Section>
+    )
+}
+
+function _renderProjectInfo() {
+    return (
+        <div className={styles.project}>
+            { _renderProjectTitle('https://www.sbazar.cz', 'Sbazar')}
+            &
+            { _renderProjectTitle('https://www.sauto.cz/prejit-na-mobil/', 'Sauto')}
+            { _renderProjectImage('./img/sbazar.jpg')}  
+        </div>
+    )
+}
+
+function _renderProjectTitle(link = '', title = '') {
+    return <a className={styles.projectTitle} href={link}>{title}</a>
+}
+
+function _renderProjectImage(url = '', alt = '') {
+    return <img className={styles.projectImage} src={url} alt={alt} />
+}
+
+function _renderJobDesc() {
+    return (
+        <div className={styles.projectDescription}>
+            <span className={styles.projectDescriptionTitle}><b>Job description:</b></span>
+
+            <ul>
+                {jobDescData.map((job, index) => <li key={index}>{job}</li>)}
+            </ul>
+        </div>
+    )
+}
+
+function _renderTech() {
+    return (
+        <div className={styles.projectTech}>
+            <ul>
+                {techStackData.map((technology, index) => <li key={index}>{technology}</li>)}
+            </ul>
+        </div>
+    )
+}
