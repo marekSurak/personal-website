@@ -1,0 +1,10 @@
+.footer, .wip {
+    display: flex;
+    justify-content: center;
+    color: #9a9a9a;
+    line-height: 2;
+}
+
+.wip {
+    font-weight: 300;
+}

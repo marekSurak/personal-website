@@ -1,0 +1,34 @@
+.menu {
+    text-align: right;
+    position: absolute;
+    right: 2rem;
+    line-height: .7;
+    bottom: 50%;
+}
+
+.menu.work {
+    text-align: left;
+    left: 0;
+}
+
+.first-line {
+    font-weight: 600;
+    font-size: 6rem;
+    display: block;
+    color: #9a9a9a1a;
+}
+.second-line {
+    display: block;
+    color: #a4292a30;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .first-line {
+        font-size: 12rem;
+    }
+    .second-line {
+        font-size: 6rem;
+    }
+}
