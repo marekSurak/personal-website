@@ -1,6 +1,6 @@
 .layout {
     margin: 0 auto;
-    perspective: 30px;
+    perspective: 1.875rem;
     overflow-x: hidden;
     overflow-y: auto;
 }

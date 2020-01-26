@@ -48,7 +48,7 @@
 
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .wrapper {
         margin-top: 15rem;
         flex-direction: row;

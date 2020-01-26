@@ -27,12 +27,11 @@
 
 .icon:hover {
     cursor: pointer;
-    /* fill: #ea6a1d; */
     transform: scale(1.2);
     transition: all 200ms;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .text {
         font-size: 1.25rem;
     }

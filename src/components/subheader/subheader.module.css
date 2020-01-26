@@ -1,13 +1,13 @@
 
 .subheader {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 300;
     line-height: 1;
 }
 
 .subheader:nth-of-type(2) {
     color:#9a9a9a;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     display: block;
     font-weight: 300;
 }
@@ -18,7 +18,7 @@
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .subheader {
         font-size: 3rem;
     }
@@ -29,7 +29,7 @@
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
     .subheader {
         font-size: 5rem;
     }
