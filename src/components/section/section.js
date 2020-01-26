@@ -2,10 +2,10 @@ import React from "react"
 import styles from "./section.module.css"
 import cn from "classnames";
 
-export default function Section ({ id, title, subTitle, imageUrl, children, className }) {
+export default function Section ({ id, title, subTitle, imageUrl, fallbackImageUrl, children, className }) {
     return (
         <div className={cn(styles.wrapper, styles[className])} id={id}>
-            { imageUrl && _renderImage(imageUrl) }
+            { imageUrl && _renderImage(imageUrl, fallbackImageUrl) }
             
             <div className={styles.contentWrapper}>
                 { _renderTitle(title, subTitle) }
@@ -15,10 +15,14 @@ export default function Section ({ id, title, subTitle, imageUrl, children, clas
     )
 }
 
-function _renderImage(imageUrl) {
+function _renderImage(imageUrl, fallbackImageUrl) {
     return (
         <div className={styles.imageWrap}>
-            <img className={styles.image} src={imageUrl} alt='profile' />
+            <picture>
+                <source srcset={imageUrl} type="image/webp" />
+                <source srcset={fallbackImageUrl} type="image/png" />
+                <img src={fallbackImageUrl} alt="profile-photo" className={styles.image} />
+            </picture>
         </div>
     )
 }

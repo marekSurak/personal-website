@@ -42,10 +42,10 @@ export default function Work () {
 function _renderProjectInfo() {
     return (
         <div className={styles.project}>
-            { _renderProjectTitle('https://www.sbazar.cz', 'Sbazar')}
+            { _renderProjectTitle('https://www.sbazar.cz', 'www.sbazar.cz')}
             &
-            { _renderProjectTitle('https://www.sauto.cz/prejit-na-mobil/', 'Sauto')}
-            { _renderProjectImage('./img/sbazar.jpg')}  
+            { _renderProjectTitle('https://www.sauto.cz/prejit-na-mobil/', 'www.sauto.cz')}
+            { _renderProjectImage('./img/sbazar.webp', './img/sbazar.jpg')}  
         </div>
     )
 }
@@ -54,8 +54,14 @@ function _renderProjectTitle(link = '', title = '') {
     return <a className={styles.projectTitle} href={link}>{title}</a>
 }
 
-function _renderProjectImage(url = '', alt = '') {
-    return <img className={styles.projectImage} src={url} alt={alt} />
+function _renderProjectImage(url = '', fallbackUrl ='', alt = '') {
+    return (
+        <picture>
+            <source srcset={url} type="image/webp" />
+            <source srcset={fallbackUrl} type="image/png" />
+            <img src={fallbackUrl} alt={alt} className={styles.projectImage}  />
+        </picture>
+    )
 }
 
 function _renderJobDesc() {
