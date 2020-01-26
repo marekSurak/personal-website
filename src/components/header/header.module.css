@@ -5,13 +5,13 @@
     font-weight: 600;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .header {
         font-size: 2rem;
     }
 }
 
-@media screen and  (min-width: 1024px) {
+@media screen and  (min-width: 64rem) {
     .header {
         font-size: 3rem;
     }

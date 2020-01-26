@@ -1,27 +1,27 @@
 @font-face {
 	font-family: Raleway;
-    src: url(./static/fonts/Raleway-thin.ttf);
-    font-weight: 300;
-    font-display: fallback;
+	src: url(./static/fonts/Raleway-thin.ttf);
+	font-weight: 300;
+	font-display: fallback;
 }
 
 @font-face {
 	font-family: Raleway;
-    src: url(./static/fonts/Raleway-light.ttf);
-    font-weight: 400;
-    font-display: fallback;
+	src: url(./static/fonts/Raleway-light.ttf);
+	font-weight: 400;
+	font-display: fallback;
 }
 
 @font-face {
 	font-family: Raleway;
-    src: url(./static/fonts/Raleway-medium.ttf);
-    font-weight: 500;
-    font-display: fallback;
+	src: url(./static/fonts/Raleway-medium.ttf);
+	font-weight: 500;
+	font-display: fallback;
 }
 
 @font-face {
 	font-family: Raleway;
-    src: url(./static/fonts/Raleway-bold.ttf);
-    font-weight: 700;
-    font-display: fallback;
+	src: url(./static/fonts/Raleway-bold.ttf);
+	font-weight: 700;
+	font-display: fallback;
 }

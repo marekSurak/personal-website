@@ -20,19 +20,18 @@
     font-weight: 600;
     transform: scale(1.1);
     transition: all 200ms;
-    /* border-bottom: 2px solid #a4292a; */
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .item {
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
         width: 6rem;
     }
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 64rem) {
     .list {
         right: 3rem;
     }

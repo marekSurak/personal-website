@@ -1,61 +1,62 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 .viewport-box {
-    height: 100vh;
-    position: relative;
+	height: 100vh;
+	position: relative;
 }
 
 .header-wrap {
-    position: absolute;
-    bottom: 30%;
-    left: 1rem;
+	position: absolute;
+	bottom: 30%;
+	left: 1rem;
 }
 
 .scroll-text {
-    position: absolute;
-    right: 50%;
-    transform: translate(50%, 50%);
-    bottom: 15%;
-    display: block;
-    width: 80px;
-    z-index: 2;
-    font-size: .75rem;
-
+	position: absolute;
+	right: 50%;
+	transform: translate(50%, 50%);
+	bottom: 15%;
+	font-size: 0.75rem;
 }
 
 .parallax-wrap {
-    height: 100vh;
-    position: relative;
-    padding: 1rem 1rem .5rem 1rem;
+	height: 100vh;
+	position: relative;
+	padding: 1rem 1rem 0.5rem 1rem;
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) {
-    .header-wrap {
-        bottom: 7rem;
-        left: 3rem;
-    }
 
-    .scroll-text {
-        bottom: 3rem;
-        font-size: .875rem;
-    }
-    
-    .parallax-wrap {
-        padding: 2rem 2rem 1rem 2rem;
-    }
+/* 768px */
+@media screen and (min-width: 48rem) {
+	.header-wrap {
+		bottom: 7rem;
+		left: 3rem;
+	}
+
+	.scroll-text {
+		bottom: 3rem;
+		font-size: 0.875rem;
+	}
+
+	.parallax-wrap {
+		padding: 2rem 2rem 1rem 2rem;
+	}
 }
 
 /* DESKTOP */
-@media screen and (min-width: 1024px) {
-    .header-wrap {
-        bottom: 10rem;
-        left: 5rem;
-    }
 
-    .scroll-text {
-        bottom: 4rem;
-    }
+/* 1024px */
+@media screen and (min-width: 64rem) {
+	.header-wrap {
+		bottom: 10rem;
+		left: 5rem;
+	}
+
+	.scroll-text {
+		bottom: 4rem;
+	}
 }

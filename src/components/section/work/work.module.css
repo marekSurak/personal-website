@@ -10,14 +10,10 @@
 
 .work-title {
     display: inline-block;
-    /* margin: 0 0.5rem; */
-    /* transition: all 200ms; */
 }
 
 .work-title:hover {
     font-weight: 600;
-    /* transform: scale(1.1); */
-    /* transition: all 200ms; */
 }
 
 .projects-box {
@@ -84,7 +80,7 @@
 
 
 /* TABLET */
-@media screen and (min-width: 768px) {    
+@media screen and (min-width: 48rem) {    
     .text {
         font-size: 1rem;
     }
