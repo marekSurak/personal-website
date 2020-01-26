@@ -11,4 +11,5 @@ module.exports = {
     siteUrl: `http://www.mareksurak.com`,
     description: `Website porfolio, web developer, javascript, react, front end web developer, Marek Surak`,
   },
+  plugins: [`gatsby-plugin-react-helmet`]
 }
