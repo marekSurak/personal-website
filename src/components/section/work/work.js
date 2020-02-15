@@ -8,11 +8,11 @@ const techStackData = [
 ]
 
 const jobDescData = [
-    'Building SPA fulle responsive web apps',
+    'Building SPA fully responsive web apps',
     'Developing components and pages according UI/UX designs',
     'Configuration of Gitlab CI pipelines',
     'Reviewing the quality of code',
-    'Performing functional and integrations testing',
+    'Performing functional and integration testing',
     'Using agile and scrum for effective and successful sprints',
     'Writing clean and reusable code '
 ]
