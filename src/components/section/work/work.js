@@ -3,18 +3,18 @@ import styles from "./work.module.css"
 import Section from "../section"
 
 const techStackData = [
-    'React.js','Node.js','Cypress','Ima.js','Webpack',
+    'React.js','Node.js','Express', 'Rest API', 'Cypress.io','Ima.js','Webpack',
     'Docker','EcmaScript','eslint','stylelint','less'
 ]
 
 const jobDescData = [
-    'Configuration of CI/CD Pipelines',
-    'Developing components and pages according graphic designs',
-    'Reviewing The Quality Of Code & Design',
-    'Profiling, Troubleshooting & Bugs Fixing',
-    'Performing Unit & Load Testing',
-    'Developing New Product Features',
-    'Experimenting With Latest Technologies'
+    'Building SPA fulle responsive web apps',
+    'Developing components and pages according UI/UX designs',
+    'Configuration of Gitlab CI pipelines',
+    'Reviewing the quality of code',
+    'Performing functional and integrations testing',
+    'Using agile and scrum for effective and successful sprints',
+    'Writing clean and reusable code '
 ]
 
 export default function Work () {
