@@ -19,7 +19,7 @@ const svgData = [
 
 export default function Contact () {
     return (
-        <Section className='contact' title='Get in touch!' subTitle='Do you like my work?' id='contact'>
+        <Section className='contact' title='Contact me' subTitle='Get in touch!' id='contact'>
             <div className={styles.text}>
                 <a href="mailto:marek.surak@gmail.com" className={styles.email} >hello@mareksurak.com</a>
                 <a href="tel:+420731311931" className={styles.phone} >+420 731 311 931</a>

@@ -28,6 +28,11 @@
     height: 900px;
 }
 
+/* todo - fix odkaz na cv na mobile */
+.parallax-wrap:nth-child(3) .parallax-base {
+    margin-top: 10rem;
+}
+
 .parallax-wrap:nth-child(3) .parallax-back .content {
     position: absolute;
     left: 10%;
@@ -37,6 +42,10 @@
 /* Contact */
 .parallax-wrap:nth-child(4) {
     height: 37.5em;
+}
+
+.parallax-wrap:nth-child(4) .parallax-base {
+    margin-top: 15rem;
 }
 
 .parallax-wrap:nth-child(4) .parallax-back .content {
@@ -87,6 +96,11 @@
     .parallax-wrap:nth-child(3) .parallax-back .content {
         right: 10%;
         left: 50%;
+    }
+
+    /* todo - fix odkaz na cv na mobile */
+    .parallax-wrap:nth-child(3) .parallax-base {
+        margin-top: 10rem;
     }
     
     .parallax-wrap:nth-child(4) .parallax-back .content {

@@ -27,7 +27,7 @@ export default function About () {
             <span className={styles.text}>If you agree, feel free to <b>contact me!</b></span>
             
             <span className={styles.text}>
-                {/* <a className={styles.resume} href='/resume.pdf' rel="noopener noreferrer" target='_blank'>resume</a> */}
+                <a className={styles.resume} href='/resume.pdf' rel="noopener noreferrer" target='_blank'>resume</a>
             </span>
         </Section>
     )
