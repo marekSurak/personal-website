@@ -14,8 +14,8 @@ export default function About () {
             id='about'
         >
             <span className={styles.text}>
-                I am <b>3+</b> years experienced front end web developer. I am living in <b>Brno, Czech republic</b>,
-                but I am also available to work <b>remotely.</b> Last 3 years I have worked for one of the biggest technology companies here
+                I am <b>4</b> years experienced front end web developer. I am living in <b>Brno, Czech republic</b>,
+                but I am also available to work <b>remotely.</b> Last 4 years I have worked for one of the biggest technology companies here
                 in Czech republic. You can find more information below.
             </span>
 

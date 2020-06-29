@@ -21,7 +21,7 @@ export default function Work () {
     return (
         <Section className='work' title='Work / Do' subTitle='Where I / What I' id='work'>
             <div className={styles.text}>
-                Since <b>7/2017</b> I have worked for
+                Since <b>7/2016</b> I have worked for
                 <a className={styles.workTitle} href="https://o.seznam.cz/en"  rel="noopener noreferrer" target="_blank">
                 &nbsp;<b>Seznam.cz</b>&nbsp;
                 </a>
